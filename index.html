@@ -6,7 +6,7 @@
   <title>Sterna's · Şehrin keyfini çıkar</title>
   <meta name="description" content="Sterna's; kafeler, restoranlar, parklar, müzeler ve tarihi yerlerle bulunduğun şehri keşfetmeni sağlayan mobil uygulama.">
   <meta property="og:title" content="Sterna's · Şehrin keyfini çıkar">
-  <meta property="og:description" content="Kafeler, restoranlar, parklar, müzeler ve tarihi yerler. Bulunduğun şehirde nereye gideceğini Sterna's'la seç.">
+  <meta property="og:description" content="Kafeler, restoranlar, parklar, müzeler ve tarihi yerler. Bulunduğun şehirde nereye gideceğine Sterna's'la karar ver.">
   <meta name="theme-color" content="#faf9f6">
   <link rel="icon" href="assets/sumru.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,179 +17,316 @@
 </head>
 <body>
 
-<header class="site-header">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-heart" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.8 4.5c2.1 0 3.6 1.1 4.2 2.3h2c.6-1.2 2.1-2.3 4.2-2.3 3.8 0 5.9 3.9 4.4 7.3C19.5 16.4 12 21 12 21z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M16 16l4 4"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M4 5h16v11H9l-5 4z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L12 16.8 6.8 19.6l1-5.8L3.5 9.7l5.9-.8z"/></symbol>
+</svg>
+
+<header class="site-header" id="top">
   <div class="wrap">
-    <a class="logo" href="#" aria-label="Sterna's">
+    <a class="logo" href="#top" aria-label="Sterna's">
       Sterna's
       <svg viewBox="0 0 44 18" aria-hidden="true"><path fill="currentColor" d="M0 14c8-4 14-5 20-2C24 6 32 1 44 0c-8 4-14 9-17 15-5-2-13-2-27-1z"/></svg>
     </a>
     <nav class="nav">
       <a class="link" href="#kesfet"><span data-lang="tr">Keşfet</span><span data-lang="en">Explore</span></a>
       <a class="link" href="#uygulama"><span data-lang="tr">Uygulama</span><span data-lang="en">The app</span></a>
-      <a class="link" href="#ekip"><span data-lang="tr">Ekip</span><span data-lang="en">Team</span></a>
+      <a class="link" href="#isletmeler"><span data-lang="tr">İşletmeler</span><span data-lang="en">Businesses</span></a>
       <button class="lang-toggle" type="button" id="langToggle" aria-label="Dil / Language">EN</button>
-      <a class="btn btn-outline" href="mailto:info@sternas.com.tr"><span data-lang="tr">İletişim</span><span data-lang="en">Contact</span></a>
+      <a class="btn btn-outline" href="#ekip"><span data-lang="tr">İletişim</span><span data-lang="en">Contact</span></a>
     </nav>
   </div>
 </header>
 
 <main>
+  <!-- HERO -->
   <section class="hero">
     <div class="wrap">
-      <span class="eyebrow reveal">
-        <span data-lang="tr">Türkiye'nin şehirleri için keşif rehberi</span>
-        <span data-lang="en">A discovery guide to Turkish cities</span>
-      </span>
-      <h1 class="reveal">
-        <span data-lang="tr">Şehrin <em>keyfini</em> çıkar.</span>
-        <span data-lang="en">Make the most of <em>your city.</em></span>
-      </h1>
-      <p class="lead reveal">
-        <span data-lang="tr">Kafeler, restoranlar, parklar, müzeler ve tarihi yerler. Bulunduğun şehirde nereye gideceğine Sterna's'la karar ver.</span>
-        <span data-lang="en">Cafés, restaurants, parks, museums and historic sites. Decide where to go in your city with Sterna's.</span>
-      </p>
-      <div class="hero-actions reveal">
-        <a class="btn btn-primary" href="#kesfet">
-          <span data-lang="tr">Kategorileri keşfet</span><span data-lang="en">Explore categories</span>
-          <span class="arrow" aria-hidden="true">→</span>
-        </a>
-        <a class="btn btn-outline" href="mailto:info@sternas.com.tr">
-          <span data-lang="tr">Bize ulaşın</span><span data-lang="en">Get in touch</span>
-        </a>
+      <div>
+        <span class="eyebrow reveal"><span data-lang="tr">Şehir keşif uygulaması</span><span data-lang="en">City discovery app</span></span>
+        <h1 class="reveal">
+          <span data-lang="tr">Şehrin <em>keyfini</em> çıkar.</span>
+          <span data-lang="en">Make the most of <em>your city.</em></span>
+        </h1>
+        <p class="lead reveal">
+          <span data-lang="tr">Nereye gideceğine karar vermenin en zarif yolu.</span>
+          <span data-lang="en">The most elegant way to decide where to go.</span>
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#kesfet"><span data-lang="tr">Kategorileri keşfet</span><span data-lang="en">Explore categories</span> <span class="arrow" aria-hidden="true">→</span></a>
+          <a class="btn btn-outline" href="#isletmeler"><span data-lang="tr">İşletmeler için</span><span data-lang="en">For businesses</span></a>
+        </div>
       </div>
-      <div class="hero-meta reveal">
-        <div><strong><span data-lang="tr">10 kategori</span><span data-lang="en">10 categories</span></strong>
-          <span data-lang="tr">Kahve molasından gece hayatına</span><span data-lang="en">From coffee breaks to nightlife</span></div>
-        <div><strong><span data-lang="tr">Şehrine göre</span><span data-lang="en">By your city</span></strong>
-          <span data-lang="tr">Konumuna en yakın yerler önce</span><span data-lang="en">The closest places first</span></div>
-        <div><strong>Beta</strong>
-          <span data-lang="tr">Kasım 2025'ten beri geliştiriliyor</span><span data-lang="en">In development since November 2025</span></div>
+
+      <div class="stage reveal" aria-hidden="true">
+        <div class="card w-notif float d1">
+          <span class="dot heart"><svg width="18" height="18"><use href="#i-heart"/></svg></span>
+          <div>
+            <strong><span data-lang="tr">Yorumun beğenildi</span><span data-lang="en">Your review was liked</span></strong>
+            <span class="small"><span data-lang="tr">Elif ve 2 kişi daha beğendi · şimdi</span><span data-lang="en">Elif and 2 others liked it · now</span></span>
+          </div>
+        </div>
+        <div class="card w-place float">
+          <div class="top">
+            <span class="ico"><img src="assets/ikon/tarih.webp" alt=""></span>
+            <div>
+              <div class="title">Anadolu Medeniyetleri Müzesi</div>
+              <div class="small"><span data-lang="tr">Altındağ · Müze</span><span data-lang="en">Altındağ · Museum</span></div>
+            </div>
+          </div>
+          <div class="row">
+            <span class="chip"><span data-lang="tr">Tarih ve Müzeler</span><span data-lang="en">History &amp; Museums</span></span>
+            <svg class="heart" width="22" height="22"><use href="#i-heart"/></svg>
+          </div>
+        </div>
+        <div class="card w-rate float d2">
+          <div class="small"><span data-lang="tr">Nasıldı?</span><span data-lang="en">How was it?</span></div>
+          <div class="stars">★★★★<span class="off">★</span></div>
+        </div>
+        <div class="card w-cats float d3">
+          <div><img src="assets/ikon/kafe.webp" alt=""><span data-lang="tr">Kafeler</span><span data-lang="en">Cafés</span></div>
+          <div><img src="assets/ikon/restoran.webp" alt=""><span data-lang="tr">Restoran</span><span data-lang="en">Dining</span></div>
+          <div><img src="assets/ikon/doga.webp" alt=""><span data-lang="tr">Doğa</span><span data-lang="en">Nature</span></div>
+          <div><img src="assets/ikon/tarih.webp" alt=""><span data-lang="tr">Tarih</span><span data-lang="en">History</span></div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="explore" id="kesfet">
+  <!-- EXPLORER -->
+  <section class="block explore" id="kesfet">
     <div class="wrap">
       <div class="head reveal">
-        <div>
-          <span class="eyebrow"><span data-lang="tr">Keşfet</span><span data-lang="en">Explore</span></span>
-          <h2><span data-lang="tr">Bugün canın ne istiyor?</span><span data-lang="en">What are you in the mood for?</span></h2>
-        </div>
-        <p><span data-lang="tr">Bir kategori seç, uygulamadaki gibi birkaç yer önüne gelsin.</span><span data-lang="en">Pick a category and see a few places, just like in the app.</span></p>
+        <span class="eyebrow"><span data-lang="tr">Kategoriler</span><span data-lang="en">Categories</span></span>
+        <h2><span data-lang="tr">Bugün canın ne istiyor?</span><span data-lang="en">What are you in the mood for?</span></h2>
       </div>
-
       <div class="explorer reveal">
         <ul class="cats" role="tablist" aria-label="Kategoriler" id="cats"></ul>
         <div class="panel" role="tabpanel" id="panel" aria-live="polite">
-          <span class="city">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-            Ankara
-          </span>
-          <h3 id="panelTitle"></h3>
-          <p class="sub" id="panelSub"></p>
-          <ol class="places" id="places"></ol>
-          <p class="note">
-            <span data-lang="tr">Örnekler Ankara'dan. Uygulamada şehrini seçtiğinde, sana en yakın yerler listelenir.</span>
-            <span data-lang="en">Examples from Ankara. In the app, choose your city and the places closest to you are listed.</span>
-          </p>
+          <div class="panel-top">
+            <h3 id="panelTitle"></h3>
+            <span class="chip"><svg width="13" height="13"><use href="#i-pin"/></svg> Ankara</span>
+          </div>
+          <div class="place-grid" id="places"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="ways" id="uygulama">
-    <div class="wrap">
-      <div class="head reveal">
-        <div>
-          <span class="eyebrow"><span data-lang="tr">Uygulama</span><span data-lang="en">The app</span></span>
-          <h2><span data-lang="tr">Karar vermenin yolları</span><span data-lang="en">Ways to decide</span></h2>
-        </div>
-        <p><span data-lang="tr">Ne istediğini biliyorsan haritadan bul. Bilmiyorsan Sterna's'a bırak.</span><span data-lang="en">If you know what you want, find it on the map. If you don't, leave it to Sterna's.</span></p>
-      </div>
-      <div class="ways-grid reveal">
-        <article class="way">
-          <span class="num">01</span>
-          <h3><span data-lang="tr">Kaydır ve Bul</span><span data-lang="en">Swipe &amp; Find</span></h3>
-          <p><span data-lang="tr">Yakındaki mekânlar kart kart önüne gelir; beğendiğini favorilerine ekle.</span><span data-lang="en">Nearby places arrive one card at a time; keep the ones you like.</span></p>
-        </article>
-        <article class="way">
-          <span class="num">02</span>
-          <h3><span data-lang="tr">Zar At</span><span data-lang="en">Roll the Dice</span></h3>
-          <p><span data-lang="tr">Kararsız kaldığında zarı at, gerisini Sterna's seçsin.</span><span data-lang="en">Can't decide? Roll the dice and let Sterna's choose.</span></p>
-        </article>
-        <article class="way">
-          <span class="num">03</span>
-          <h3><span data-lang="tr">Rota Oluştur</span><span data-lang="en">Plan a Route</span> <span class="tag"><span data-lang="tr">Yakında</span><span data-lang="en">Soon</span></span></h3>
-          <p><span data-lang="tr">Gezmek istediğin yerleri sıraya koyup kendi keşif rotanı çizebileceksin.</span><span data-lang="en">Soon you'll line up the places you want to see and draw your own route.</span></p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="features">
-    <div class="wrap">
-      <div class="feature-grid reveal">
-        <div class="feature"><strong><span data-lang="tr">Harita</span><span data-lang="en">Map</span></strong>
-          <span><span data-lang="tr">Yakındaki ve yüksek puanlı yerleri haritada ara, filtrele.</span><span data-lang="en">Search and filter nearby and top-rated places on the map.</span></span></div>
-        <div class="feature"><strong><span data-lang="tr">Favoriler</span><span data-lang="en">Favorites</span></strong>
-          <span><span data-lang="tr">Beğendiğin yerleri tek listede topla.</span><span data-lang="en">Keep the places you love in one list.</span></span></div>
-        <div class="feature"><strong><span data-lang="tr">Yorumlar ve beğeniler</span><span data-lang="en">Reviews &amp; likes</span></strong>
-          <span><span data-lang="tr">Puan ver, deneyimini yaz; işe yarayan yorumlar öne çıksın.</span><span data-lang="en">Rate, write, and let helpful reviews rise to the top.</span></span></div>
-        <div class="feature"><strong><span data-lang="tr">Geçmiş yerler</span><span data-lang="en">Visited places</span></strong>
-          <span><span data-lang="tr">Gittiğin yerleri hatırlar, değerlendirmen için hatırlatır.</span><span data-lang="en">Remembers where you've been and reminds you to review it.</span></span></div>
-        <div class="feature"><strong><span data-lang="tr">Yer öner</span><span data-lang="en">Suggest a place</span></strong>
-          <span><span data-lang="tr">Listede olmayan bir yeri fotoğraflarıyla ekle.</span><span data-lang="en">Add a missing place, with photos.</span></span></div>
-        <div class="feature"><strong><span data-lang="tr">Bildirimler</span><span data-lang="en">Notifications</span></strong>
-          <span><span data-lang="tr">Önerin onaylandığında ya da yorumun beğenildiğinde haberin olur.</span><span data-lang="en">Know when your suggestion is approved or your review is liked.</span></span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="next">
-    <div class="wrap">
-      <div class="head reveal">
-        <div>
-          <span class="eyebrow"><span data-lang="tr">Sırada</span><span data-lang="en">What's next</span></span>
-          <h2><span data-lang="tr">Daha az arama, daha çok keşif</span><span data-lang="en">Less searching, more discovering</span></h2>
-        </div>
-        <p><span data-lang="tr">Anthropic'in Claude modeliyle üzerinde çalıştığımız özellikler.</span><span data-lang="en">Features we're building with Anthropic's Claude.</span></p>
-      </div>
-      <div class="next-grid reveal">
-        <article>
-          <span class="num">i.</span>
-          <h3><span data-lang="tr">Yorum özetleri</span><span data-lang="en">Review summaries</span></h3>
-          <p><span data-lang="tr">Bir yerin öne çıkan yanları ve dikkat edilmesi gerekenler, birkaç cümlede.</span><span data-lang="en">A place's highlights and caveats, in a few sentences.</span></p>
-        </article>
-        <article>
-          <span class="num">ii.</span>
-          <h3><span data-lang="tr">Sana özel öneriler</span><span data-lang="en">Recommendations for you</span></h3>
-          <p><span data-lang="tr">Favorilerin, gittiğin yerler ve tercihlerinle şekillenen öneriler.</span><span data-lang="en">Suggestions shaped by your favorites, visits and preferences.</span></p>
-        </article>
-        <article>
-          <span class="num">iii.</span>
-          <h3><span data-lang="tr">Güvenli bir topluluk</span><span data-lang="en">A safer community</span></h3>
-          <p><span data-lang="tr">Yeni yer önerileri ve yorumlar yayınlanmadan önce kontrol edilir.</span><span data-lang="en">New suggestions and reviews are checked before they go live.</span></p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="closing" id="ekip">
-    <div class="wrap closing-grid">
-      <div class="reveal">
-        <span class="eyebrow"><span data-lang="tr">Ekip</span><span data-lang="en">Team</span></span>
-        <h2><span data-lang="tr">İki öğrenci, bir şehir rehberi.</span><span data-lang="en">Two students, one city guide.</span></h2>
-        <p><span data-lang="tr">Sterna's, Kasım 2025'te bir üniversite projesi olarak başladı ve bugün beta aşamasında.</span><span data-lang="en">Sterna's started as a university project in November 2025 and is now in beta.</span></p>
-        <ul class="people">
-          <li><strong>Hasan Berat Türe</strong><span><span data-lang="tr">Kurucu ortak · Geliştirici</span><span data-lang="en">Co-founder · Developer</span></span></li>
-          <li><strong>Burak Kirkin</strong><span><span data-lang="tr">Kurucu ortak · Geliştirici</span><span data-lang="en">Co-founder · Developer</span></span></li>
+  <!-- MAP -->
+  <section class="block">
+    <div class="wrap map-wrap">
+      <div class="map-copy reveal">
+        <span class="eyebrow"><span data-lang="tr">Harita</span><span data-lang="en">Map</span></span>
+        <h2><span data-lang="tr">Yakınındakiler, tek bakışta.</span><span data-lang="en">What's near you, at a glance.</span></h2>
+        <p><span data-lang="tr">Ara, filtrele, en yakından başla.</span><span data-lang="en">Search, filter, start with the closest.</span></p>
+        <ul class="legend">
+          <li><i style="background:#07565d"></i><span data-lang="tr">Tarih ve Müzeler</span><span data-lang="en">History &amp; Museums</span></li>
+          <li><i style="background:#3f8a5a"></i><span data-lang="tr">Parklar ve Doğa</span><span data-lang="en">Parks &amp; Nature</span></li>
+          <li><i style="background:#c86a3a"></i><span data-lang="tr">Restoranlar</span><span data-lang="en">Restaurants</span></li>
+          <li><i style="background:#a9834a"></i><span data-lang="tr">Kültür ve Sanat</span><span data-lang="en">Culture &amp; Art</span></li>
+          <li><i style="background:#8a5a86"></i><span data-lang="tr">Kafeler ve Alışveriş</span><span data-lang="en">Cafés &amp; Shopping</span></li>
         </ul>
       </div>
-      <div class="contact reveal">
-        <img src="assets/sumru.png" alt="" width="56" height="56">
-        <h3><span data-lang="tr">Bize yazın</span><span data-lang="en">Write to us</span></h3>
-        <p><span data-lang="tr">Görüş, öneri ve iş birlikleri için.</span><span data-lang="en">For feedback, ideas and partnerships.</span></p>
-        <a class="btn" href="mailto:info@sternas.com.tr">info@sternas.com.tr <span class="arrow" aria-hidden="true">→</span></a>
+      <div class="map reveal" aria-hidden="true">
+        <svg viewBox="0 0 600 500" preserveAspectRatio="xMidYMid slice">
+          <rect width="600" height="500" fill="#eef2ee"/>
+          <g fill="#dce9d6">
+            <path d="M-20 40 Q90 10 190 60 Q230 120 170 190 Q80 220 -20 180 Z"/>
+            <rect x="268" y="190" width="70" height="46" rx="18"/>
+            <rect x="318" y="350" width="44" height="30" rx="12"/>
+            <path d="M120 300 Q170 270 220 300 Q230 340 180 350 Q120 345 120 300 Z"/>
+          </g>
+          <g fill="none" stroke="#ffffff" stroke-linecap="round">
+            <path d="M330 -10 C 320 120, 300 220, 325 330 S 360 470, 350 520" stroke-width="14"/>
+            <path d="M-10 120 C 120 140, 220 170, 320 205 S 520 250, 620 230" stroke-width="12"/>
+            <path d="M-10 430 C 120 400, 230 360, 325 330" stroke-width="12"/>
+            <path d="M325 330 C 420 330, 520 360, 620 400" stroke-width="10"/>
+          </g>
+          <g fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity=".9">
+            <path d="M200 0 C 210 100, 240 200, 230 300 S 250 450, 240 520"/>
+            <path d="M420 -10 C 410 120, 440 260, 470 520"/>
+            <path d="M0 260 C 150 250, 300 270, 600 300"/>
+            <path d="M80 500 C 160 420, 260 420, 380 470"/>
+            <path d="M380 120 C 450 110, 520 140, 610 130"/>
+          </g>
+          <g id="pins"></g>
+        </svg>
+        <div class="card map-search"><svg width="16" height="16"><use href="#i-search"/></svg><span data-lang="tr">Mekân ara</span><span data-lang="en">Search places</span></div>
+        <div class="card map-card" id="mapCard">
+          <span class="ico"><img id="mapIco" src="assets/ikon/tarih.webp" alt=""></span>
+          <div>
+            <div class="title" id="mapName"></div>
+            <div class="small" id="mapMeta"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APP BENTO -->
+  <section class="block" id="uygulama" style="padding-top:20px">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow"><span data-lang="tr">Uygulama</span><span data-lang="en">The app</span></span>
+        <h2><span data-lang="tr">Uygulamanın içinden</span><span data-lang="en">Inside the app</span></h2>
+      </div>
+
+      <div class="bento" aria-hidden="true">
+        <div class="tile t-review reveal">
+          <h3><span data-lang="tr">Yorumlar</span><span data-lang="en">Reviews</span></h3>
+          <div class="card review">
+            <div class="who">
+              <img src="assets/sumru.png" alt="">
+              <div>
+                <div class="title" style="font-size:15px">Zeynep A.</div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+            <p><span data-lang="tr">Gün batımını izlemek için en güzel yer. Hafta sonu erken gidin.</span><span data-lang="en">The best spot for sunset. Go early on weekends.</span></p>
+            <div class="meta">
+              <span class="small">Ankara Kalesi</span>
+              <span class="likes"><svg class="heart" width="16" height="16"><use href="#i-heart"/></svg> 24</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile t-dice reveal">
+          <h3><span data-lang="tr">Zar At</span><span data-lang="en">Roll the dice</span></h3>
+          <div class="dice-row">
+            <div class="die" id="die"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="card dice-result" id="diceResult">
+              <span class="ico"><img id="diceIco" src="assets/ikon/kultur.webp" alt=""></span>
+              <div>
+                <div class="title" id="diceName"></div>
+                <div class="small" id="diceMeta"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile t-swipe reveal">
+          <h3><span data-lang="tr">Kaydır ve Bul</span><span data-lang="en">Swipe &amp; Find</span></h3>
+          <div class="swipe">
+            <div class="card"><div class="title">Eymir Gölü</div></div>
+            <div class="card"><div class="title">CerModern</div></div>
+            <div class="card">
+              <div style="display:flex;gap:12px;align-items:center">
+                <span class="ico"><img src="assets/ikon/doga.webp" alt=""></span>
+                <div><div class="title">Gençlik Parkı</div><div class="small">Altındağ · 1,2 km</div></div>
+              </div>
+              <div class="acts"><span><svg width="14" height="14"><use href="#i-x"/></svg></span><span class="heart"><svg width="15" height="15"><use href="#i-heart"/></svg></span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tile t-fav reveal">
+          <h3><span data-lang="tr">Favoriler</span><span data-lang="en">Favorites</span></h3>
+          <div class="mini-list">
+            <div class="r"><span class="ico"><img src="assets/ikon/kafe.webp" alt=""></span><div class="grow"><div class="title">Café des Cafés</div><div class="small">Çankaya</div></div><svg class="heart" width="16" height="16"><use href="#i-heart"/></svg></div>
+            <div class="r"><span class="ico"><img src="assets/ikon/tarih.webp" alt=""></span><div class="grow"><div class="title">Anıtkabir</div><div class="small">Çankaya</div></div><svg class="heart" width="16" height="16"><use href="#i-heart"/></svg></div>
+            <div class="r"><span class="ico"><img src="assets/ikon/alisveris.webp" alt=""></span><div class="grow"><div class="title">Samanpazarı</div><div class="small">Altındağ</div></div><svg class="heart" width="16" height="16"><use href="#i-heart"/></svg></div>
+          </div>
+        </div>
+
+        <div class="tile t-history reveal">
+          <h3><span data-lang="tr">Geçmiş yerler</span><span data-lang="en">Visited places</span></h3>
+          <div class="mini-list">
+            <div class="r"><span class="ico"><img src="assets/ikon/restoran.webp" alt=""></span><div class="grow"><div class="title">Uludağ Kebapçısı</div><div class="small"><span data-lang="tr">Dün</span><span data-lang="en">Yesterday</span></div></div><span class="chip orange"><span data-lang="tr">Değerlendir</span><span data-lang="en">Review</span></span></div>
+            <div class="r"><span class="ico"><img src="assets/ikon/kultur.webp" alt=""></span><div class="grow"><div class="title">CerModern</div><div class="small"><span data-lang="tr">3 gün önce</span><span data-lang="en">3 days ago</span></div></div><span class="chip green"><span data-lang="tr">Değerlendirdin</span><span data-lang="en">Reviewed</span></span></div>
+            <div class="r"><span class="ico"><img src="assets/ikon/doga.webp" alt=""></span><div class="grow"><div class="title">Eymir Gölü</div><div class="small">12.10.2026</div></div><span class="chip green"><span data-lang="tr">Değerlendirdin</span><span data-lang="en">Reviewed</span></span></div>
+          </div>
+        </div>
+
+        <div class="tile t-notifs reveal">
+          <h3><span data-lang="tr">Bildirimler</span><span data-lang="en">Notifications</span></h3>
+          <div class="notifs">
+            <div class="card notif unread"><span class="dot heart" style="background:#fbe8ec"><svg width="16" height="16"><use href="#i-heart"/></svg></span><div><strong><span data-lang="tr">Yorumun beğenildi</span><span data-lang="en">Your review was liked</span></strong><span class="small"><span data-lang="tr">Elif ve 2 kişi daha Ankara Kalesi yorumunu beğendi.</span><span data-lang="en">Elif and 2 others liked your Ankara Kalesi review.</span></span></div></div>
+            <div class="card notif"><span class="dot" style="background:#e5f2ea;color:#2f7a4f"><svg width="16" height="16"><use href="#i-check"/></svg></span><div><strong><span data-lang="tr">Yer önerin onaylandı</span><span data-lang="en">Your suggestion was approved</span></strong><span class="small"><span data-lang="tr">Önerdiğin mekân artık Sterna's'ta.</span><span data-lang="en">The place you suggested is now on Sterna's.</span></span></div></div>
+            <div class="card notif"><span class="dot" style="background:#e3eef5;color:#2a6f9a"><svg width="16" height="16"><use href="#i-pin"/></svg></span><div><strong><span data-lang="tr">Sana bir mekân önerdik</span><span data-lang="en">A place for you</span></strong><span class="small"><span data-lang="tr">CerModern ilgini çekebilir.</span><span data-lang="en">You might like CerModern.</span></span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEXT -->
+  <section class="block next">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow"><span data-lang="tr">Sırada</span><span data-lang="en">What's next</span></span>
+        <h2><span data-lang="tr">Yakında Sterna's'ta</span><span data-lang="en">Coming to Sterna's</span></h2>
+        <p><span data-lang="tr">Bir kısmını Anthropic'in Claude modeliyle geliştiriyoruz.</span><span data-lang="en">Some of it built with Anthropic's Claude.</span></p>
+      </div>
+      <div class="next-grid reveal">
+        <div class="next-item"><span class="num">i.</span><h3><span data-lang="tr">Yorum özetleri</span><span data-lang="en">Review summaries</span></h3><p><span data-lang="tr">Öne çıkanlar, birkaç cümlede.</span><span data-lang="en">The highlights, in a few lines.</span></p></div>
+        <div class="next-item"><span class="num">ii.</span><h3><span data-lang="tr">Sana özel öneriler</span><span data-lang="en">For you</span></h3><p><span data-lang="tr">Zevkine göre şekillenen liste.</span><span data-lang="en">A list shaped by your taste.</span></p></div>
+        <div class="next-item"><span class="num">iii.</span><h3><span data-lang="tr">Güvenli topluluk</span><span data-lang="en">Safer community</span></h3><p><span data-lang="tr">Yeni içerik yayından önce kontrol edilir.</span><span data-lang="en">New content checked before it's live.</span></p></div>
+        <div class="next-item"><span class="num">iv.</span><h3><span data-lang="tr">Rota Oluştur</span><span data-lang="en">Plan a Route</span></h3><p><span data-lang="tr">Kendi keşif rotanı çiz.</span><span data-lang="en">Draw your own route.</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUSINESS -->
+  <section class="block biz" id="isletmeler">
+    <div class="wrap biz-grid">
+      <div class="reveal">
+        <span class="eyebrow"><span data-lang="tr">İşletmeler için</span><span data-lang="en">For businesses</span></span>
+        <h2><span data-lang="tr">Mekânını Sterna's'ta öne çıkar.</span><span data-lang="en">Put your place on Sterna's.</span></h2>
+        <p class="intro"><span data-lang="tr">Şehrini keşfeden insanlar seni bulsun.</span><span data-lang="en">Be found by people exploring your city.</span></p>
+        <ul class="perks">
+          <li><span class="pi"><svg><use href="#i-spark"/></svg></span><div><strong><span data-lang="tr">Doğru ve güncel bilgi</span><span data-lang="en">Accurate details</span></strong><span><span data-lang="tr">Adres, kategori ve fotoğraflarını sen yönet.</span><span data-lang="en">Manage your address, category and photos.</span></span></div></li>
+          <li><span class="pi"><svg><use href="#i-chat"/></svg></span><div><strong><span data-lang="tr">Yorumları takip et</span><span data-lang="en">Follow reviews</span></strong><span><span data-lang="tr">Ziyaretçilerin ne dediğini tek yerden gör.</span><span data-lang="en">See what visitors say, in one place.</span></span></div></li>
+          <li><span class="pi"><svg><use href="#i-chart"/></svg></span><div><strong><span data-lang="tr">İşletme paneli · yakında</span><span data-lang="en">Business dashboard · soon</span></strong><span><span data-lang="tr">Görüntülenme ve favori istatistikleri.</span><span data-lang="en">Views and favorites, at a glance.</span></span></div></li>
+        </ul>
+      </div>
+
+      <form class="biz-form reveal" id="bizForm" novalidate>
+        <h3><span data-lang="tr">Başvuru formu</span><span data-lang="en">Apply</span></h3>
+        <p class="small"><span data-lang="tr">Ekibimiz en kısa sürede sana dönecek.</span><span data-lang="en">Our team will get back to you shortly.</span></p>
+        <div class="fields">
+          <div class="field full"><label for="f-name"><span data-lang="tr">İşletme adı</span><span data-lang="en">Business name</span></label><input id="f-name" name="isletme" required autocomplete="organization"></div>
+          <div class="field"><label for="f-cat"><span data-lang="tr">Kategori</span><span data-lang="en">Category</span></label>
+            <select id="f-cat" name="kategori" required>
+              <option value="">—</option>
+              <option>Restoranlar</option><option>Kafeler ve Tatlıcılar</option><option>Parklar ve Doğa</option>
+              <option>Tarih ve Müzeler</option><option>Eğlence ve Aktiviteler</option><option>Alışveriş</option>
+              <option>Kültür ve Sanat</option><option>Spor ve Fitness</option><option>Konaklama</option><option>Gece Hayatı</option>
+            </select>
+          </div>
+          <div class="field"><label for="f-city"><span data-lang="tr">Şehir</span><span data-lang="en">City</span></label><input id="f-city" name="sehir" required autocomplete="address-level2"></div>
+          <div class="field full"><label for="f-person"><span data-lang="tr">Yetkili adı soyadı</span><span data-lang="en">Contact name</span></label><input id="f-person" name="yetkili" required autocomplete="name"></div>
+          <div class="field"><label for="f-mail"><span data-lang="tr">E-posta</span><span data-lang="en">Email</span></label><input id="f-mail" name="email" type="email" required autocomplete="email"></div>
+          <div class="field"><label for="f-phone"><span data-lang="tr">Telefon (isteğe bağlı)</span><span data-lang="en">Phone (optional)</span></label><input id="f-phone" name="telefon" type="tel" autocomplete="tel"></div>
+          <label class="consent"><input type="checkbox" id="f-consent" required>
+            <span><span data-lang="tr">Bilgilerimin başvurumla ilgili iletişim için işlenmesini kabul ediyorum. <a href="gizlilik.html">Gizlilik Politikası</a></span><span data-lang="en">I agree that my details are processed to contact me about this application. <a href="gizlilik.html">Privacy Policy</a></span></span>
+          </label>
+          <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off">
+        </div>
+        <button class="btn btn-primary" type="submit"><span data-lang="tr">Başvuruyu gönder</span><span data-lang="en">Send application</span> <span class="arrow" aria-hidden="true">→</span></button>
+        <p class="form-msg" id="formMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="block" id="ekip">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow"><span data-lang="tr">Ekip</span><span data-lang="en">Team</span></span>
+        <h2><span data-lang="tr">İki öğrenci, bir şehir rehberi.</span><span data-lang="en">Two students, one city guide.</span></h2>
+      </div>
+      <div class="team-grid reveal">
+        <div class="card person"><span class="av">H</span><div><strong>Hasan Berat Türe</strong><span class="small"><span data-lang="tr">Kurucu ortak · Geliştirici</span><span data-lang="en">Co-founder · Developer</span></span></div></div>
+        <div class="card person"><span class="av">B</span><div><strong>Burak Kirkin</strong><span class="small"><span data-lang="tr">Kurucu ortak · Geliştirici</span><span data-lang="en">Co-founder · Developer</span></span></div></div>
+        <div class="card person contact-tile"><span class="small"><span data-lang="tr">Bize yazın</span><span data-lang="en">Write to us</span></span><a href="mailto:info@sternas.com.tr">info@sternas.com.tr</a></div>
       </div>
     </div>
   </section>
@@ -198,7 +335,11 @@
 <footer>
   <div class="wrap">
     <span>© 2026 Sterna's</span>
-    <a href="gizlilik.html"><span data-lang="tr">Gizlilik Politikası</span><span data-lang="en">Privacy Policy</span></a>
+    <nav>
+      <a href="#isletmeler"><span data-lang="tr">İşletmeler</span><span data-lang="en">Businesses</span></a>
+      <a href="gizlilik.html"><span data-lang="tr">Gizlilik</span><span data-lang="en">Privacy</span></a>
+      <a href="mailto:info@sternas.com.tr"><span data-lang="tr">İletişim</span><span data-lang="en">Contact</span></a>
+    </nav>
   </div>
 </footer>
 
