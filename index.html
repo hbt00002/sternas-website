@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sterna's · Şehrin keyfini çıkar</title>
-  <meta name="description" content="Sterna's; restoranlar, kafeler, parklar, müzeler ve tarihi yerlerle bulunduğun şehri keşfetmeni sağlayan mobil uygulama.">
+  <meta name="description" content="Sterna's; kafeler, restoranlar, parklar, müzeler ve tarihi yerlerle bulunduğun şehri keşfetmeni sağlayan mobil uygulama.">
   <meta property="og:title" content="Sterna's · Şehrin keyfini çıkar">
-  <meta property="og:description" content="Restoranlar, kafeler, parklar, müzeler ve tarihi yerler. Bulunduğun şehirde nereye gideceğini Sterna's'la seç.">
-  <meta property="og:image" content="https://sternas.com.tr/assets/sehir.jpg">
-  <meta name="theme-color" content="#053c41">
+  <meta property="og:description" content="Kafeler, restoranlar, parklar, müzeler ve tarihi yerler. Bulunduğun şehirde nereye gideceğini Sterna's'la seç.">
+  <meta name="theme-color" content="#faf9f6">
   <link rel="icon" href="assets/sumru.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
@@ -24,10 +24,11 @@
       <svg viewBox="0 0 44 18" aria-hidden="true"><path fill="currentColor" d="M0 14c8-4 14-5 20-2C24 6 32 1 44 0c-8 4-14 9-17 15-5-2-13-2-27-1z"/></svg>
     </a>
     <nav class="nav">
-      <a href="#kategoriler"><span data-lang="tr">Kategoriler</span><span data-lang="en">Categories</span></a>
-      <a href="#uygulama"><span data-lang="tr">Uygulama</span><span data-lang="en">The app</span></a>
-      <a href="#ekip"><span data-lang="tr">Ekip</span><span data-lang="en">Team</span></a>
+      <a class="link" href="#kesfet"><span data-lang="tr">Keşfet</span><span data-lang="en">Explore</span></a>
+      <a class="link" href="#uygulama"><span data-lang="tr">Uygulama</span><span data-lang="en">The app</span></a>
+      <a class="link" href="#ekip"><span data-lang="tr">Ekip</span><span data-lang="en">Team</span></a>
       <button class="lang-toggle" type="button" id="langToggle" aria-label="Dil / Language">EN</button>
+      <a class="btn btn-outline" href="mailto:info@sternas.com.tr"><span data-lang="tr">İletişim</span><span data-lang="en">Contact</span></a>
     </nav>
   </div>
 </header>
@@ -35,195 +36,160 @@
 <main>
   <section class="hero">
     <div class="wrap">
-      <div class="hero-copy">
-        <span class="kicker">
-          <span data-lang="tr">Türkiye'nin şehirleri için keşif rehberi</span>
-          <span data-lang="en">A discovery guide to Turkish cities</span>
-        </span>
-        <h1>
-          <span data-lang="tr">Şehrin <em>keyfini</em> çıkar.</span>
-          <span data-lang="en">Make the most of <em>your city.</em></span>
-        </h1>
-        <p>
-          <span data-lang="tr">Restoranlar, kafeler, parklar, müzeler ve tarihi yerler. Bulunduğun şehirde nereye gideceğini Sterna's'la seç.</span>
-          <span data-lang="en">Restaurants, cafés, parks, museums and historic sites. Decide where to go in your city with Sterna's.</span>
-        </p>
-        <div class="hero-links">
-          <a class="button" href="#kategoriler"><span data-lang="tr">Kategorileri gör</span><span data-lang="en">See categories</span></a>
-          <a class="link-arrow" href="mailto:info@sternas.com.tr"><span data-lang="tr">Bize yaz</span><span data-lang="en">Get in touch</span> →</a>
-        </div>
+      <span class="eyebrow reveal">
+        <span data-lang="tr">Türkiye'nin şehirleri için keşif rehberi</span>
+        <span data-lang="en">A discovery guide to Turkish cities</span>
+      </span>
+      <h1 class="reveal">
+        <span data-lang="tr">Şehrin <em>keyfini</em> çıkar.</span>
+        <span data-lang="en">Make the most of <em>your city.</em></span>
+      </h1>
+      <p class="lead reveal">
+        <span data-lang="tr">Kafeler, restoranlar, parklar, müzeler ve tarihi yerler. Bulunduğun şehirde nereye gideceğine Sterna's'la karar ver.</span>
+        <span data-lang="en">Cafés, restaurants, parks, museums and historic sites. Decide where to go in your city with Sterna's.</span>
+      </p>
+      <div class="hero-actions reveal">
+        <a class="btn btn-primary" href="#kesfet">
+          <span data-lang="tr">Kategorileri keşfet</span><span data-lang="en">Explore categories</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+        <a class="btn btn-outline" href="mailto:info@sternas.com.tr">
+          <span data-lang="tr">Bize ulaşın</span><span data-lang="en">Get in touch</span>
+        </a>
       </div>
-      <div class="hero-device">
-        <div class="device"><div class="screen">
-          <img src="assets/ekran-anasayfa.jpg" alt="Sterna's ana sayfası" width="742" height="1534">
-        </div></div>
+      <div class="hero-meta reveal">
+        <div><strong><span data-lang="tr">10 kategori</span><span data-lang="en">10 categories</span></strong>
+          <span data-lang="tr">Kahve molasından gece hayatına</span><span data-lang="en">From coffee breaks to nightlife</span></div>
+        <div><strong><span data-lang="tr">Şehrine göre</span><span data-lang="en">By your city</span></strong>
+          <span data-lang="tr">Konumuna en yakın yerler önce</span><span data-lang="en">The closest places first</span></div>
+        <div><strong>Beta</strong>
+          <span data-lang="tr">Kasım 2025'ten beri geliştiriliyor</span><span data-lang="en">In development since November 2025</span></div>
       </div>
     </div>
   </section>
 
-  <section class="categories" id="kategoriler">
+  <section class="explore" id="kesfet">
     <div class="wrap">
-      <div class="section-intro">
+      <div class="head reveal">
         <div>
-          <span class="kicker"><span data-lang="tr">Kategoriler</span><span data-lang="en">Categories</span></span>
+          <span class="eyebrow"><span data-lang="tr">Keşfet</span><span data-lang="en">Explore</span></span>
           <h2><span data-lang="tr">Bugün canın ne istiyor?</span><span data-lang="en">What are you in the mood for?</span></h2>
         </div>
-        <p>
-          <span data-lang="tr">Sabah kahvesinden gece yarısına kadar, şehri on farklı kapıdan keşfet. Seçtiğin şehre ve konumuna göre en yakın ve en sevilen yerler önüne gelsin.</span>
-          <span data-lang="en">From morning coffee to midnight, explore the city through ten doors. The closest and best-loved places come to you, based on your city and location.</span>
-        </p>
+        <p><span data-lang="tr">Bir kategori seç, uygulamadaki gibi birkaç yer önüne gelsin.</span><span data-lang="en">Pick a category and see a few places, just like in the app.</span></p>
       </div>
-      <ul class="cat-grid">
-        <li><span class="no">01</span><img src="assets/kategori/kafe.webp" alt="" width="360" height="360" loading="lazy">
-          <h3><span data-lang="tr">Kafeler</span><span data-lang="en">Cafés</span></h3>
-          <p><span data-lang="tr">Kahve molası</span><span data-lang="en">A coffee break</span></p></li>
-        <li><span class="no">02</span><img src="assets/kategori/restoran.webp" alt="" width="360" height="360" loading="lazy">
-          <h3><span data-lang="tr">Restoranlar</span><span data-lang="en">Restaurants</span></h3>
-          <p><span data-lang="tr">Akşam yemeğinden sokak lezzetine</span><span data-lang="en">Fine dining to street food</span></p></li>
-        <li><span class="no">03</span><img src="assets/kategori/doga.webp" alt="" width="360" height="360" loading="lazy">
-          <h3><span data-lang="tr">Doğa ve Parklar</span><span data-lang="en">Nature &amp; Parks</span></h3>
-          <p><span data-lang="tr">Nefes alacak yeşil alanlar</span><span data-lang="en">Green places to breathe</span></p></li>
-        <li><span class="no">04</span><img src="assets/kategori/tarih.webp" alt="" width="360" height="360" loading="lazy">
-          <h3><span data-lang="tr">Tarihi Yerler</span><span data-lang="en">Historic Sites</span></h3>
-          <p><span data-lang="tr">Şehrin hafızası</span><span data-lang="en">The city's memory</span></p></li>
-        <li><span class="no">05</span><img src="assets/kategori/sanat.webp" alt="" width="360" height="360" loading="lazy">
-          <h3><span data-lang="tr">Sanat ve Müzeler</span><span data-lang="en">Art &amp; Museums</span></h3>
-          <p><span data-lang="tr">Sergiler ve galeriler</span><span data-lang="en">Exhibitions and galleries</span></p></li>
-        <li><span class="no">06</span><img src="assets/kategori/eglence.webp" alt="" width="360" height="360" loading="lazy">
-          <h3><span data-lang="tr">Eğlence</span><span data-lang="en">Entertainment</span></h3>
-          <p><span data-lang="tr">Aktiviteler ve deneyimler</span><span data-lang="en">Activities and experiences</span></p></li>
-        <li><span class="no">07</span><img src="assets/kategori/alisveris.webp" alt="" width="360" height="360" loading="lazy">
-          <h3><span data-lang="tr">Alışveriş</span><span data-lang="en">Shopping</span></h3>
-          <p><span data-lang="tr">Çarşılar ve dükkânlar</span><span data-lang="en">Bazaars and shops</span></p></li>
-        <li><span class="no">08</span><img src="assets/kategori/gece.webp" alt="" width="360" height="360" loading="lazy">
-          <h3><span data-lang="tr">Gece Hayatı</span><span data-lang="en">Nightlife</span></h3>
-          <p><span data-lang="tr">Akşamın devamı</span><span data-lang="en">Where the evening goes on</span></p></li>
-        <li><span class="no">09</span><img src="assets/kategori/konaklama.webp" alt="" width="360" height="360" loading="lazy">
-          <h3><span data-lang="tr">Konaklama</span><span data-lang="en">Stays</span></h3>
-          <p><span data-lang="tr">Kalacak güzel bir yer</span><span data-lang="en">A good place to stay</span></p></li>
-        <li><span class="no">10</span><img src="assets/kategori/spor.webp" alt="" width="360" height="360" loading="lazy">
-          <h3><span data-lang="tr">Spor</span><span data-lang="en">Sports</span></h3>
-          <p><span data-lang="tr">Hareket etmenin yolları</span><span data-lang="en">Ways to get moving</span></p></li>
-      </ul>
+
+      <div class="explorer reveal">
+        <ul class="cats" role="tablist" aria-label="Kategoriler" id="cats"></ul>
+        <div class="panel" role="tabpanel" id="panel" aria-live="polite">
+          <span class="city">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            Ankara
+          </span>
+          <h3 id="panelTitle"></h3>
+          <p class="sub" id="panelSub"></p>
+          <ol class="places" id="places"></ol>
+          <p class="note">
+            <span data-lang="tr">Örnekler Ankara'dan. Uygulamada şehrini seçtiğinde, sana en yakın yerler listelenir.</span>
+            <span data-lang="en">Examples from Ankara. In the app, choose your city and the places closest to you are listed.</span>
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="ways">
+  <section class="ways" id="uygulama">
     <div class="wrap">
-      <div class="section-intro">
+      <div class="head reveal">
         <div>
-          <span class="kicker"><span data-lang="tr">Keşfet</span><span data-lang="en">Explore</span></span>
-          <h2><span data-lang="tr">Karar vermenin üç yolu</span><span data-lang="en">Three ways to decide</span></h2>
+          <span class="eyebrow"><span data-lang="tr">Uygulama</span><span data-lang="en">The app</span></span>
+          <h2><span data-lang="tr">Karar vermenin yolları</span><span data-lang="en">Ways to decide</span></h2>
         </div>
-        <p>
-          <span data-lang="tr">Ne istediğini biliyorsan haritadan bul. Bilmiyorsan Sterna's'a bırak.</span>
-          <span data-lang="en">If you know what you want, find it on the map. If you don't, leave it to Sterna's.</span>
-        </p>
+        <p><span data-lang="tr">Ne istediğini biliyorsan haritadan bul. Bilmiyorsan Sterna's'a bırak.</span><span data-lang="en">If you know what you want, find it on the map. If you don't, leave it to Sterna's.</span></p>
       </div>
-      <div class="ways-grid">
+      <div class="ways-grid reveal">
         <article class="way">
-          <img src="assets/kaydir-ve-bul.jpg" alt="" loading="lazy">
-          <span class="no">01</span>
+          <span class="num">01</span>
           <h3><span data-lang="tr">Kaydır ve Bul</span><span data-lang="en">Swipe &amp; Find</span></h3>
           <p><span data-lang="tr">Yakındaki mekânlar kart kart önüne gelir; beğendiğini favorilerine ekle.</span><span data-lang="en">Nearby places arrive one card at a time; keep the ones you like.</span></p>
         </article>
         <article class="way">
-          <img src="assets/zar-at.jpg" alt="" loading="lazy">
-          <span class="no">02</span>
+          <span class="num">02</span>
           <h3><span data-lang="tr">Zar At</span><span data-lang="en">Roll the Dice</span></h3>
           <p><span data-lang="tr">Kararsız kaldığında zarı at, gerisini Sterna's seçsin.</span><span data-lang="en">Can't decide? Roll the dice and let Sterna's choose.</span></p>
         </article>
         <article class="way">
-          <img src="assets/rota-olustur.jpg" alt="" loading="lazy">
-          <span class="soon-badge"><span data-lang="tr">Yakında</span><span data-lang="en">Coming soon</span></span>
-          <span class="no">03</span>
-          <h3><span data-lang="tr">Rota Oluştur</span><span data-lang="en">Plan a Route</span></h3>
+          <span class="num">03</span>
+          <h3><span data-lang="tr">Rota Oluştur</span><span data-lang="en">Plan a Route</span> <span class="tag"><span data-lang="tr">Yakında</span><span data-lang="en">Soon</span></span></h3>
           <p><span data-lang="tr">Gezmek istediğin yerleri sıraya koyup kendi keşif rotanı çizebileceksin.</span><span data-lang="en">Soon you'll line up the places you want to see and draw your own route.</span></p>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="app" id="uygulama">
+  <section class="features">
     <div class="wrap">
-      <div class="devices">
-        <div class="device"><div class="screen">
-          <img src="assets/ekran-kesfet.jpg" alt="Keşfet ekranı" width="724" height="1542" loading="lazy">
-        </div></div>
-        <div class="device"><div class="screen">
-          <img src="assets/ekran-profil.jpg" alt="Profil ekranı" width="748" height="1540" loading="lazy">
-        </div></div>
-      </div>
-      <div>
-        <span class="kicker"><span data-lang="tr">Uygulama</span><span data-lang="en">The app</span></span>
-        <h2><span data-lang="tr">Gittiğin her yer, bir sonrakine yol gösterir.</span><span data-lang="en">Every place you visit points to the next.</span></h2>
-        <p class="lead">
-          <span data-lang="tr">Sterna's sadece mekân listelemez; nereye gittiğini hatırlar, deneyimini paylaşmanı kolaylaştırır.</span>
-          <span data-lang="en">Sterna's doesn't just list places; it remembers where you've been and makes sharing your experience easy.</span>
-        </p>
-        <ul class="feature-list">
-          <li><strong><span data-lang="tr">Favoriler</span><span data-lang="en">Favorites</span></strong>
-            <span><span data-lang="tr">Beğendiğin yerleri tek listede topla.</span><span data-lang="en">Keep the places you love in one list.</span></span></li>
-          <li><strong><span data-lang="tr">Yorumlar ve beğeniler</span><span data-lang="en">Reviews &amp; likes</span></strong>
-            <span><span data-lang="tr">Puan ver, deneyimini yaz; işe yarayan yorumlar öne çıksın.</span><span data-lang="en">Rate, write, and let the most helpful reviews rise to the top.</span></span></li>
-          <li><strong><span data-lang="tr">Geçmiş yerler</span><span data-lang="en">Visited places</span></strong>
-            <span><span data-lang="tr">Gittiğin mekânları hatırlar, değerlendirmen için nazikçe hatırlatır.</span><span data-lang="en">Remembers where you've been and gently reminds you to review it.</span></span></li>
-          <li><strong><span data-lang="tr">Yer öner</span><span data-lang="en">Suggest a place</span></strong>
-            <span><span data-lang="tr">Haritada olmayan bir yeri fotoğraflarıyla ekle.</span><span data-lang="en">Add a place we're missing, with photos.</span></span></li>
-          <li><strong><span data-lang="tr">Bildirimler</span><span data-lang="en">Notifications</span></strong>
-            <span><span data-lang="tr">Önerin onaylandığında ya da yorumun beğenildiğinde haberin olur.</span><span data-lang="en">Know when your suggestion is approved or your review is liked.</span></span></li>
-        </ul>
+      <div class="feature-grid reveal">
+        <div class="feature"><strong><span data-lang="tr">Harita</span><span data-lang="en">Map</span></strong>
+          <span><span data-lang="tr">Yakındaki ve yüksek puanlı yerleri haritada ara, filtrele.</span><span data-lang="en">Search and filter nearby and top-rated places on the map.</span></span></div>
+        <div class="feature"><strong><span data-lang="tr">Favoriler</span><span data-lang="en">Favorites</span></strong>
+          <span><span data-lang="tr">Beğendiğin yerleri tek listede topla.</span><span data-lang="en">Keep the places you love in one list.</span></span></div>
+        <div class="feature"><strong><span data-lang="tr">Yorumlar ve beğeniler</span><span data-lang="en">Reviews &amp; likes</span></strong>
+          <span><span data-lang="tr">Puan ver, deneyimini yaz; işe yarayan yorumlar öne çıksın.</span><span data-lang="en">Rate, write, and let helpful reviews rise to the top.</span></span></div>
+        <div class="feature"><strong><span data-lang="tr">Geçmiş yerler</span><span data-lang="en">Visited places</span></strong>
+          <span><span data-lang="tr">Gittiğin yerleri hatırlar, değerlendirmen için hatırlatır.</span><span data-lang="en">Remembers where you've been and reminds you to review it.</span></span></div>
+        <div class="feature"><strong><span data-lang="tr">Yer öner</span><span data-lang="en">Suggest a place</span></strong>
+          <span><span data-lang="tr">Listede olmayan bir yeri fotoğraflarıyla ekle.</span><span data-lang="en">Add a missing place, with photos.</span></span></div>
+        <div class="feature"><strong><span data-lang="tr">Bildirimler</span><span data-lang="en">Notifications</span></strong>
+          <span><span data-lang="tr">Önerin onaylandığında ya da yorumun beğenildiğinde haberin olur.</span><span data-lang="en">Know when your suggestion is approved or your review is liked.</span></span></div>
       </div>
     </div>
   </section>
 
   <section class="next">
     <div class="wrap">
-      <div class="section-intro">
+      <div class="head reveal">
         <div>
-          <span class="kicker"><span data-lang="tr">Sırada</span><span data-lang="en">What's next</span></span>
+          <span class="eyebrow"><span data-lang="tr">Sırada</span><span data-lang="en">What's next</span></span>
           <h2><span data-lang="tr">Daha az arama, daha çok keşif</span><span data-lang="en">Less searching, more discovering</span></h2>
         </div>
-        <p>
-          <span data-lang="tr">Anthropic'in Claude modeliyle üzerinde çalıştığımız özellikler.</span>
-          <span data-lang="en">Features we're building with Anthropic's Claude.</span>
-        </p>
+        <p><span data-lang="tr">Anthropic'in Claude modeliyle üzerinde çalıştığımız özellikler.</span><span data-lang="en">Features we're building with Anthropic's Claude.</span></p>
       </div>
-      <div class="next-grid">
+      <div class="next-grid reveal">
         <article>
-          <span class="no">i.</span>
+          <span class="num">i.</span>
           <h3><span data-lang="tr">Yorum özetleri</span><span data-lang="en">Review summaries</span></h3>
-          <p><span data-lang="tr">Yüzlerce yorumu okumadan, bir mekânın öne çıkan yanlarını ve dikkat edilmesi gerekenleri birkaç cümlede gör.</span><span data-lang="en">See a place's highlights and caveats in a few sentences, without reading hundreds of reviews.</span></p>
+          <p><span data-lang="tr">Bir yerin öne çıkan yanları ve dikkat edilmesi gerekenler, birkaç cümlede.</span><span data-lang="en">A place's highlights and caveats, in a few sentences.</span></p>
         </article>
         <article>
-          <span class="no">ii.</span>
+          <span class="num">ii.</span>
           <h3><span data-lang="tr">Sana özel öneriler</span><span data-lang="en">Recommendations for you</span></h3>
-          <p><span data-lang="tr">Favorilerin, gittiğin yerler ve tercihlerinle şekillenen öneriler.</span><span data-lang="en">Suggestions shaped by your favorites, past visits and preferences.</span></p>
+          <p><span data-lang="tr">Favorilerin, gittiğin yerler ve tercihlerinle şekillenen öneriler.</span><span data-lang="en">Suggestions shaped by your favorites, visits and preferences.</span></p>
         </article>
         <article>
-          <span class="no">iii.</span>
-          <h3><span data-lang="tr">Daha güvenli bir topluluk</span><span data-lang="en">A safer community</span></h3>
-          <p><span data-lang="tr">Yeni yer önerileri ve yorumlar yayınlanmadan önce uygunluk açısından kontrol edilir.</span><span data-lang="en">New place suggestions and reviews are checked before they go live.</span></p>
+          <span class="num">iii.</span>
+          <h3><span data-lang="tr">Güvenli bir topluluk</span><span data-lang="en">A safer community</span></h3>
+          <p><span data-lang="tr">Yeni yer önerileri ve yorumlar yayınlanmadan önce kontrol edilir.</span><span data-lang="en">New suggestions and reviews are checked before they go live.</span></p>
         </article>
       </div>
     </div>
   </section>
 
   <section class="closing" id="ekip">
-    <div class="wrap">
-      <div>
-        <span class="kicker"><span data-lang="tr">Ekip</span><span data-lang="en">Team</span></span>
+    <div class="wrap closing-grid">
+      <div class="reveal">
+        <span class="eyebrow"><span data-lang="tr">Ekip</span><span data-lang="en">Team</span></span>
         <h2><span data-lang="tr">İki öğrenci, bir şehir rehberi.</span><span data-lang="en">Two students, one city guide.</span></h2>
-        <p><span data-lang="tr">Sterna's, Kasım 2025'te bir üniversite projesi olarak başladı. Bugün beta aşamasında, her gün biraz daha gelişen bir keşif uygulaması.</span><span data-lang="en">Sterna's started as a university project in November 2025. Today it's a discovery app in beta, improving every day.</span></p>
+        <p><span data-lang="tr">Sterna's, Kasım 2025'te bir üniversite projesi olarak başladı ve bugün beta aşamasında.</span><span data-lang="en">Sterna's started as a university project in November 2025 and is now in beta.</span></p>
         <ul class="people">
           <li><strong>Hasan Berat Türe</strong><span><span data-lang="tr">Kurucu ortak · Geliştirici</span><span data-lang="en">Co-founder · Developer</span></span></li>
           <li><strong>Burak Kirkin</strong><span><span data-lang="tr">Kurucu ortak · Geliştirici</span><span data-lang="en">Co-founder · Developer</span></span></li>
         </ul>
       </div>
-      <div class="contact-card">
-        <img src="assets/sumru.png" alt="" width="72" height="72">
-        <p><span data-lang="tr">Görüş, öneri ve iş birlikleri için bize yaz.</span><span data-lang="en">Write to us with feedback, ideas or partnerships.</span></p>
-        <a class="mail" href="mailto:info@sternas.com.tr">info@sternas.com.tr</a>
+      <div class="contact reveal">
+        <img src="assets/sumru.png" alt="" width="56" height="56">
+        <h3><span data-lang="tr">Bize yazın</span><span data-lang="en">Write to us</span></h3>
+        <p><span data-lang="tr">Görüş, öneri ve iş birlikleri için.</span><span data-lang="en">For feedback, ideas and partnerships.</span></p>
+        <a class="btn" href="mailto:info@sternas.com.tr">info@sternas.com.tr <span class="arrow" aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
@@ -236,6 +202,6 @@
   </div>
 </footer>
 
-<script src="lang.js"></script>
+<script src="site.js"></script>
 </body>
 </html>
