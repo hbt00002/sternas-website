@@ -304,7 +304,7 @@
           <div class="field"><label for="f-city"><span data-lang="tr">Şehir</span><span data-lang="en">City</span></label><input id="f-city" name="sehir" required autocomplete="address-level2"></div>
           <div class="field full"><label for="f-person"><span data-lang="tr">Yetkili adı soyadı</span><span data-lang="en">Contact name</span></label><input id="f-person" name="yetkili" required autocomplete="name"></div>
           <div class="field"><label for="f-mail"><span data-lang="tr">E-posta</span><span data-lang="en">Email</span></label><input id="f-mail" name="email" type="email" required autocomplete="email"></div>
-          <div class="field"><label for="f-phone"><span data-lang="tr">Telefon (isteğe bağlı)</span><span data-lang="en">Phone (optional)</span></label><input id="f-phone" name="telefon" type="tel" autocomplete="tel"></div>
+          <div class="field"><label for="f-phone"><span data-lang="tr">Telefon (isteğe bağlı)</span><span data-lang="en">Phone (optional)</span></label><input id="f-phone" name="telefon" type="tel" autocomplete="tel" pattern="[0-9+()\s\-]{7,20}" title="Örn. 0532 123 45 67"></div>
           <label class="consent"><input type="checkbox" id="f-consent" required>
             <span><span data-lang="tr">Bilgilerimin başvurumla ilgili iletişim için işlenmesini kabul ediyorum. <a href="gizlilik.html">Gizlilik Politikası</a></span><span data-lang="en">I agree that my details are processed to contact me about this application. <a href="gizlilik.html">Privacy Policy</a></span></span>
           </label>
