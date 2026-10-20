@@ -212,15 +212,20 @@
       }
       var data = Object.fromEntries(new FormData(form).entries());
       if (data._honey) return;
-      data._subject = 'Sterna\'s işletme başvurusu: ' + data.isletme;
-      data._template = 'table';
       var button = form.querySelector('button[type="submit"]');
       button.disabled = true;
       msg.className = 'form-msg'; msg.textContent = t(text.sending);
-      fetch('https://formsubmit.co/ajax/info@sternas.com.tr', {
+      fetch('https://api.sternas.com.tr/business-applications', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-        body: JSON.stringify(data)
+        body: JSON.stringify({
+          businessName: data.isletme,
+          category: data.kategori,
+          city: data.sehir,
+          contactName: data.yetkili,
+          email: data.email,
+          phone: data.telefon || undefined
+        })
       }).then(function (r) {
         if (!r.ok) throw new Error('status ' + r.status);
         msg.className = 'form-msg ok'; msg.textContent = t(text.ok);
