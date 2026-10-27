@@ -107,6 +107,8 @@ section { scroll-margin-top: 84px; }
 .hero h1 em { font-style: italic; color: var(--gold); }
 .hero .lead { font-size: 19px; color: var(--ink-soft); max-width: 470px; margin: 0 0 38px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.launch { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 22px; }
+.launch .small { display: inline-flex; align-items: center; gap: 5px; margin-right: 4px; }
 
 .stage {
   position: relative; height: 560px; border-radius: 32px;
@@ -229,7 +231,7 @@ section { scroll-margin-top: 84px; }
 
 .review { padding: 18px; display: grid; gap: 10px; }
 .review .who { display: flex; align-items: center; gap: 10px; }
-.review .who img { width: 34px; height: 34px; border-radius: 50%; }
+.review .who .av { width: 34px; height: 34px; border-radius: 50%; background: var(--sage); display: grid; place-items: center; font: 500 15px var(--serif); color: var(--teal-deep); flex: none; }
 .review p { margin: 0; color: var(--ink-soft); font-size: 15px; }
 .review .meta { display: flex; justify-content: space-between; align-items: center; }
 .likes { display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: var(--ink-soft); }
